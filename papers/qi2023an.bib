@@ -1,6 +1,15 @@
-@article{qi2023effective,
-  title={An Effective Meaningful Way to Evaluate Survival Models},
-  author={Qi, Shi-ang and Kumar, Neeraj and Farrokh, Mahtab and Sun, Weijie and Kuan, Li-Hao and Ranganath, Rajesh and Henao, Ricardo and Greiner, Russell},
-  journal={arXiv preprint arXiv:2306.01196},
-  year={2023}
+@InProceedings{pmlr-v202-qi23b,
+  title = 	 {An Effective Meaningful Way to Evaluate Survival Models},
+  author =       {Qi, Shi-Ang and Kumar, Neeraj and Farrokh, Mahtab and Sun, Weijie and Kuan, Li-Hao and Ranganath, Rajesh and Henao, Ricardo and Greiner, Russell},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {28244--28276},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/qi23b/qi23b.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/qi23b.html},
+  abstract = 	 {One straightforward metric to evaluate a survival prediction model is based on the Mean Absolute Error (MAE) – the average of the absolute difference between the time predicted by the model and the true event time, over all subjects. Unfortunately, this is challenging because, in practice, the test set includes (right) censored individuals, meaning we do not know when a censored individual actually experienced the event. In this paper, we explore various metrics to estimate MAE for survival datasets that include (many) censored individuals. Moreover, we introduce a novel and effective approach for generating realistic semi-synthetic survival datasets to facilitate the evaluation of metrics. Our findings, based on the analysis of the semi-synthetic datasets, reveal that our proposed metric (MAE using pseudo-observations) is able to rank models accurately based on their performance, and often closely matches the true MAE – in particular, is better than several alternative methods.}
 }
