@@ -1,6 +1,17 @@
-@article{yu2023iHAS,
-  title={iHAS: Instance-wise Hierarchical Architecture Search for Deep Learning Recommendation Models},
-  author={Yu, Yakun and Qi, Shi-ang and Yang, Jiuding and Jiang, Liyao and Niu, Di},
-  journal={Proceedings of Conference on Information and Knowledge Management (CIKM) 2023},
-  year={2023}
+@inproceedings{10.1145/3583780.3614925,
+author = {Yu, Yakun and Qi, Shi-ang and Yang, Jiuding and Jiang, Liyao and Niu, Di},
+title = {IHAS: Instance-Wise Hierarchical Architecture Search for Deep Learning Recommendation Models},
+year = {2023},
+isbn = {9798400701245},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3583780.3614925},
+doi = {10.1145/3583780.3614925},
+abstract = {Current recommender systems employ large-sized embedding tables with uniform dimensions for all features, leading to overfitting, high computational cost, and suboptimal generalizing performance. Many techniques aim to solve this issue by feature selection or embedding dimension search. However, these techniques typically select a fixed subset of features or embedding dimensions for all instances and feed all instances into one recommender model without considering heterogeneity between items or users. This paper proposes a novel instance-wise Hierarchical Architecture Search framework, iHAS, which automates neural architecture search at the instance level. Specifically, iHAS incorporates three stages: searching, clustering, and retraining. The searching stage identifies optimal instance-wise embedding dimensions across different field features via carefully designed Bernoulli gates with stochastic selection and regularizers. After obtaining these dimensions, the clustering stage divides samples into distinct groups via a deterministic selection approach of Bernoulli gates. The retraining stage then constructs different recommender models, each one designed with optimal dimensions for the corresponding group. We conduct extensive experiments to evaluate the proposed iHAS on two public benchmark datasets from a real-world recommender system. The experimental results demonstrate the effectiveness of iHAS and its outstanding transferability to widely-used deep recommendation models.},
+booktitle = {Proceedings of the 32nd ACM International Conference on Information and Knowledge Management},
+pages = {3030–3039},
+numpages = {10},
+keywords = {embedding dimension search, instance-wise, recommender system},
+location = {Birmingham, United Kingdom},
+series = {CIKM '23}
 }

@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Shi-ang Qi</name>
               </p>
-              <p>I am a 3rd-year Ph.D. student in the <a href="https://www.ualberta.ca/computing-science/" target="_blank"> Department of Computing Science</a> 
+              <p>I am a Ph.D. student in the <a href="https://www.ualberta.ca/computing-science/" target="_blank"> Department of Computing Science</a> 
                 at the <a href="https://www.ualberta.ca/" target="_blank">University of Alberta</a>, 
                 under the mentorship of <a href="https://sites.google.com/view/drrussellgreiner/home" target="_blank"> Dr. Russell Greiner</a>. 
                 In addition, I work closely alongside <a href="https://neerajkumarvaid.weebly.com/" target="_blank"> Dr. Neeraj Kumar</a>,
@@ -57,14 +57,15 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td style="padding:20px;width:100%;vertical-align:middle;">
               <heading>Publication</heading>
               <p>
                 My research direction is very multidisciplinary. 
                 My general research interests focus on machine/deep Learning for healthcare, bioinformatics, 
                 survival analysis, and causal inference for medicine tasks. 
-                Currently, I'm particularly interested in building interpretable survival models 
-                (individual survival distributions) for identifying actionable factors of breast cancer, 
+                Currently, I'm particularly interested in building reliable and interpretable survival models which
+                generate individual survival distributions.
+                I'm also interested for identifying actionable factors of breast cancer, 
                 which is collaborating with the <a href="https://myatp.ca/" target="_blank"> Alberta's Tomorrow Project</a>.
                 Other research experiences involve recommendation system, multimodal sentiment analysis, computational psychiatry, intersection of machine learning and metabolomics, and therapeutic applications of low-intensity pulsed ultrasound.
               </p>
@@ -76,6 +77,138 @@
           <!-- <em> <font color="red"><strong> Paper list under development!</strong></font></em><br> -->
 
           <tr> &#160&#160&#160&#160&#160&#160&#160* Equal contribution authorship.</tr>
+
+          <!-- CSD -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'qi2024conformalized'><img src='./papers/qi2024conformalized.png' style='width:160px;height:75px;'></div>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/qi2024conformalized.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/qi2024conformalized.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Conformalized Survival Distributions: A Generic Post-Process to Increase Calibration</papertitle>
+          <br>
+                <strong>Shi-ang Qi</strong>,
+                <a href="https://scholar.google.ca/citations?user=tKqJM7oAAAAJ&hl=en" target="_blank"> Yakun Yu</a>,
+                <a href="https://sites.google.com/view/drrussellgreiner/home" target="_blank"> Russell Greiner</a>
+                <br>
+                <em>International Conference of Machine Learning (ICML 2024)</em>
+          <br>
+              <a href="https://icml.cc/virtual/2024/poster/33286">pdf(coming soon)</a>
+            </td>
+          </tr>
+
+          <!-- SurvivalEVAL -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'qi2024survivaleval'><img src='./papers/qi2024survivaleval.png' style='width:130px;height:130px;'></div>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/qi2024survivaleval.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/qi2024survivaleval.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> SurvivalEVAL: A Comprehensive Open-Source Python Package for Evaluating Individual Survival Distributions</papertitle>
+          <br>
+                <strong>Shi-ang Qi</strong>,
+                <a href="https://jeremykid.github.io/" target="_blank">Weijie Sun</a>,
+                <a href="https://sites.google.com/view/drrussellgreiner/home" target="_blank"> Russell Greiner</a>
+                <br>
+                <em>Second Symposium on Survival Prediction: Algorithms, Challenges, and Applications (SPACA)</em>
+          <br>
+              <a href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/27713">pdf</a>
+              /
+              <a href="https://github.com/shi-ang/SurvivalEVAL">code</a>
+              /
+              <a href="papers/qi2024survivaleval.bib">bibtex</a>
+            </td>
+          </tr>
+          
+          <!-- ECG-ISD -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'sun2024predicting'><img src='./papers/sun2024predicting.png' style='width:160px;height:100px;'></div>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/sun2024predicting.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/sun2024predicting.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Predicting Individual Survival Distributions Using ECG: A Deep Learning Approach Utilizing Features Extracted by a Learned Diagnostic Model </papertitle>
+          <br>
+                <a href="https://jeremykid.github.io/" target="_blank">Weijie Sun</a>,
+                <a href="https://scholar.google.co.in/citations?user=R5SqbZEAAAAJ&hl=en" target="_blank">Sunil V Kalmady</a>,
+                <strong>Shi-ang Qi</strong>,
+                <a href="https://scholar.google.com/citations?user=EwCqxUoAAAAJ&hl=en" target="_blank">Nariman Sepehrvand</a>,
+                <a href="https://softwareprocess.es/homepage/index.html" target="_blank">Abram Hindle</a>,
+                <a href="https://sites.google.com/view/drrussellgreiner/home" target="_blank"> Russell Greiner</a>,
+                <a href="https://apps.ualberta.ca/directory/person/pkaul" target="_blank">Padma Kaul</a>
+                <br>
+                <em>Second Symposium on Survival Prediction: Algorithms, Challenges, and Applications (SPACA)</em>
+          <br>
+              <a href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/27716">pdf</a>
+              /
+              <a href="papers/sun2024predicting.bib">bibtex</a>
+            </td>
+          </tr>
+          
+          <!-- ECG-ISD 2 -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'nademi2023supervised'><img src='./papers/nademi2023supervised.png' style='width:160px;height:100px;'></div>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/nademi2023supervised.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/nademi2023supervised.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Supervised Electrocardiogram(ECG) Features Outperform Knowledge-based And Unsupervised Features In Individualized Survival Prediction</papertitle>
+          <br>
+                <a href="https://scholar.google.ca/citations?user=XFnNg8kAAAAJ&hl=en" target="_blank">Yousef Nademi</a>,      
+                <a href="https://scholar.google.co.in/citations?user=R5SqbZEAAAAJ&hl=en" target="_blank">Sunil V Kalmady</a>,
+                <a href="https://jeremykid.github.io/" target="_blank">Weijie Sun</a>,
+                <strong>Shi-ang Qi</strong>,
+                <a href="https://softwareprocess.es/homepage/index.html" target="_blank">Abram Hindle</a>,
+                <a href="https://apps.ualberta.ca/directory/person/pkaul" target="_blank">Padma Kaul</a>,
+                <a href="https://sites.google.com/view/drrussellgreiner/home" target="_blank"> Russell Greiner</a>
+                <br>
+                <em>Machine Learning for Health (ML4H 2023)</em>
+          <br>
+              <a href="https://proceedings.mlr.press/v225/nademi23a.html">pdf</a>
+              /
+              <a href="papers/nademi2023supervised.bib">bibtex</a>
+            </td>
+          </tr>
 
           <!-- iHAS -->
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
@@ -104,10 +237,8 @@
                 <br>
                 <em>Conference on Information and Knowledge Management (CIKM 2023)</em>
           <br>
-              pdf(in press)
-              /
-              code
-              /              
+              <a href="https://dl.acm.org/doi/10.1145/3583780.3614925">pdf</a>
+              /           
               <a href="papers/yu2023iHAS.bib">bibtex</a>
             </td>
           </tr>
