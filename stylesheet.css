@@ -689,6 +689,12 @@ h3 {
   font-size: 0.97rem;
 }
 
+.publication-author-note {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .publication-links {
   display: flex;
   flex-wrap: wrap;
@@ -803,10 +809,6 @@ h3 {
 
 .talk-links a:hover {
   color: var(--accent);
-}
-
-.misc-panel {
-  max-width: 760px;
 }
 
 strong {

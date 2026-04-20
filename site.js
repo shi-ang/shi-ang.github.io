@@ -206,7 +206,8 @@ const publications = [
     year: "2022",
     title: "Learning accurate personalized survival models for predicting hospital discharge and mortality of COVID-19 patients",
     venue: "Scientific Reports 2022",
-    authors: "Neeraj Kumar, Shi-ang Qi, Li-Hao Kuan, Weijie Sun, Jianfei Zhang, Russell Greiner",
+    authors: "Neeraj Kumar*, Shi-ang Qi*, Li-Hao Kuan, Weijie Sun, Jianfei Zhang, Russell Greiner",
+    authorNote: "* Co-first authors",
     tags: ["Journal", "Survival Analysis", "Healthcare AI"],
     links: [
       { label: "PDF", href: "https://www.nature.com/articles/s41598-022-08601-6" },
@@ -218,7 +219,8 @@ const publications = [
     year: "2021",
     title: "High-resolution metabolomic biomarkers for lung cancer diagnosis and prognosis",
     venue: "Scientific Reports 2021",
-    authors: "Shi-ang Qi, Qian Wu, Zhenpu Chen, Wei Zhang, Yongchun Zhou, Kaining Mao, Jia Li, Yuanyuan Li, Jie Chen, Youguang Huang, Yunchao Huang",
+    authors: "Shi-ang Qi*, Qian Wu*, Zhenpu Chen, Wei Zhang, Yongchun Zhou, Kaining Mao, Jia Li, Yuanyuan Li, Jie Chen, Youguang Huang, Yunchao Huang",
+    authorNote: "* Co-first authors",
     tags: ["Journal", "Healthcare AI"],
     links: [
       { label: "PDF", href: "https://www.nature.com/articles/s41598-021-91276-2" },
@@ -382,6 +384,7 @@ function renderPublications() {
       </div>
       <h3>${publication.title}</h3>
       <p class="publication-authors">${highlightOwnName(publication.authors)}</p>
+      ${publication.authorNote ? `<p class="publication-author-note">${publication.authorNote}</p>` : ""}
       ${
         publication.links && publication.links.length
           ? `<div class="publication-links">${createLinkList(publication.links)}</div>`
